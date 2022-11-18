@@ -7,14 +7,14 @@ const Header = () => {
     <header className="header__container">
       <h3>TransMonitor</h3>
       <div className="header__search__container">
-        <Search />
+        <Search fontSize="small"/>
         <input className="header__search" placeholder="Search..." />
       </div>
       <nav className="header__nav">
         <a>Support</a>
         <a>FAQS</a>
         <div className="header__nav__notification">
-          <Badge badgeContent={2} overlap="circular" color="primary">
+          <Badge badgeContent={8} overlap="circular" color="primary">
             <NotificationsOutlined  />
           </Badge>
         </div>

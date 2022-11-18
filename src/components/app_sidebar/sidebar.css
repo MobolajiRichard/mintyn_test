@@ -4,9 +4,8 @@
     line-height: 2px;
     color: #647787;
     font-family: 'Segoe UI', sans-serif;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+    height: 100vh;
+  
 }
 
 .sidebar__button{
@@ -23,6 +22,7 @@
     margin-top: 10%;
     margin-left: 2.5em;
     margin-bottom: 2.5em;
+    font-family:'Roboto' !important;
 }
 
 .sidebar__links__container{

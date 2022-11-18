@@ -1,13 +1,25 @@
+.app{
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
 .body__container{
   display: flex;
+  
 }
 
 .sidebar{
   flex: 0.18;
+  
 }
 
 .main{
   flex:0.82;
-  background-color: #E5E5E5;
-  height: 100vh;
+  background-color:#EAEEF0;
+  height: 92vh;
+  overflow-y: auto;
+  /* min-height: 100vh; */
 }

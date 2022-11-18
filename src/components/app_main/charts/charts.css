@@ -1,0 +1,138 @@
+.chart__transactions{
+    display: flex;
+    align-items: center;
+
+}
+
+.chart__transactions__daily__total{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.chart__transaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    margin-left: 2em;
+    height: 4.6875em;
+    width: 16em;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.chart__transaction__name{
+    font-size: 0.75rem;
+    color: #647787;
+}
+
+.chart__transaction__amount{
+    font-size: 1.2rem;
+    color: #262626;
+    font-weight: 500;
+}
+
+.chart__container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 2em;
+    background-color: white;
+    width: 85%;
+    margin-left: 2em;
+
+}
+
+.graph__header{
+    flex: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.graph__date{
+    display: flex;
+    align-items: center;
+}
+
+/* .graph__container{
+} */
+
+.graph__select{
+    background-color: inherit;
+    outline: none;
+    border: 1px solid #c2c4cc;
+    border-radius: 2px;
+    color: #b6b7bd;
+    height: 3em;
+    width: 12em;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+
+.graph__select__button > button{
+    border:1px solid #CED0DA;
+    color: #CED0DA;
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+.graph__order__payment{
+
+    width: 30em;
+    height: 50%;
+    margin-top: 4px;
+    padding: 2% 0 2% 4%;
+}
+
+.bottom{
+    border-bottom: 5px solid #EAEEF0;
+
+}
+
+.graph__order__payment__container{
+    font-size: 0.875rem;
+    background-color: white;
+    border-left: 5px solid #EAEEF0;
+    
+}
+
+.order__payment{
+    font-weight: 700;
+
+}
+
+.order__payment__border{
+    display: flex;
+    width: 80%;
+}
+
+.bg__green{
+    flex:0.7;
+    background-color: #27AE60;
+    height: 4px;
+}
+.bg__yellow{
+    flex:0.3;
+    background-color: #FDC203;
+    height: 4px;
+}
+
+.yellow{
+    color: #FDC203;
+    font-weight: 700;
+}
+
+.green{
+    color: #27AE60;
+    font-weight: 700;
+}
+
+.blue{
+    color: #1860EC;
+    font-weight: 700;
+}
+
