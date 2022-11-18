@@ -1,5 +1,4 @@
 import { Search, FiberManualRecord, ExpandMore } from "@mui/icons-material";
-import { ReactComponent as Arrow } from "./Arrow.svg";
 import { data } from "./dummydata";
 import { Avatar } from "@mui/material";
 import { useState, useEffect } from "react";
@@ -18,7 +17,7 @@ const Payments = () => {
     } else if (pagination === 2) {
       setSearchResult(dataTwo);
     }
-  }, [pagination]);
+  }, [pagination, dataOne, dataTwo]);
 
   const paginationChange = (num) => {
     if (num === "prev") {
@@ -75,7 +74,7 @@ const Payments = () => {
                   </Avatar>
                   <p> {d.name}</p>
                 </td>
-                <td>{d.price}</td>
+                <td>&#8358;{d.price}</td>
                 <td>{d.transaction__no}</td>
                 <td>{d.time}</td>
                 <td className="payment__status__container ">

@@ -1,6 +1,7 @@
 import "./header.css";
 import { Avatar, Badge } from "@mui/material";
 import { NotificationsOutlined, Search } from "@mui/icons-material";
+import image from './image.jpg'
 
 const Header = () => {
   return (
@@ -11,8 +12,8 @@ const Header = () => {
         <input className="header__search" placeholder="Search..." />
       </div>
       <nav className="header__nav">
-        <a>Support</a>
-        <a>FAQS</a>
+        <p>Support</p>
+        <p>FAQS</p>
         <div className="header__nav__notification">
           <Badge badgeContent={8} overlap="circular" color="primary">
             <NotificationsOutlined  />
@@ -23,7 +24,7 @@ const Header = () => {
             <p className="header__nav__avatar__hello">Hello</p>
             <p className="header__nav__avatar__name">Oginni Mobolaji Richard</p>
           </div>
-          <Avatar />
+          <Avatar src={image}/>
         </div>
       </nav>
     </header>
