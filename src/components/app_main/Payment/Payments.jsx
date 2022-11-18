@@ -5,12 +5,18 @@ import { useState, useEffect } from "react";
 import "./payment.css";
 
 const Payments = () => {
+
+//dividing the dummydata into 2 different array 
   const dataOne = data.filter((d) => d.id < 11);
   const dataTwo = data.filter((d) => d.id > 11);
 
+  //creating a state to hold the dummydata
   const [searchResult, setSearchResult] = useState(dataOne);
+
+  //state to hold the pagination
   const [pagination, setPagination] = useState(1);
 
+  //setting the dummydata based on the pagination
   useEffect(() => {
     if (pagination === 1) {
       setSearchResult(dataOne);
@@ -19,6 +25,7 @@ const Payments = () => {
     }
   }, [pagination, dataOne, dataTwo]);
 
+  //onclick function to change pagination
   const paginationChange = (num) => {
     if (num === "prev") {
       setPagination((prev) => prev - 1);

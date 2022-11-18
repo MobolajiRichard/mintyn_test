@@ -1,3 +1,4 @@
+//generating a random number
 const randumNumber = (number)=>{
    return Math.floor(Math.random() * number)
 }
